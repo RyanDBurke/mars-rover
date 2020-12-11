@@ -1,13 +1,11 @@
-// mcs main.cs
-// mono main.exe
+// make
+// ./main.exe
 
 using System;
 using System.Collections.Generic;
 
-namespace Driver {
-
+namespace Ryan.Burke {
     class main {
-
         static void Main(string[] args) {
             Console.WriteLine("Hello, Ryan!");
         }

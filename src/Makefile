@@ -1,7 +1,7 @@
-all: main.exe
+all: Main.exe
 
-main.exe: main.cs
-	mcs main.cs
+Main.exe: Main.cs
+	mcs Main.cs Grid.cs Rover.cs
 
 clean:
-	$(RM) main.exe
+	$(RM) Main.exe

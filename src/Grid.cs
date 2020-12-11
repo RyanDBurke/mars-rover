@@ -1,4 +1,10 @@
-
+/* 
+    A Grid holds:
+        * a X-by-Y matrix-representation of grid
+            * 0 denotes rover does NOT exist at position
+            * 1 denotes rover exists at position
+        * list of all rovers that are (or will) traverse the grid
+*/
 
 using System;
 using System.Collections.Generic;

@@ -77,7 +77,20 @@ namespace Ryan.Burke {
                 while (!rover.completed()) {
                     char instruction = rover.instructions[0];
                     rover.instructions.RemoveAt(0);
-                    Console.WriteLine("SIZE: {0}", rover.instructions.Count);
+
+                    // execute move on grid and rover
+                    switch (instruction) {
+                        case 'L':
+                            break;
+                        case 'R':
+                            break;
+                        case 'M':
+                            break;
+                        default:
+                            Console.WriteLine("Invalid instruction provided: {0}.", instruction);
+                            break;
+
+                    }
                 }
             }
 

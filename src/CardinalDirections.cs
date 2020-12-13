@@ -7,16 +7,35 @@ namespace Ryan.Burke
 {
     public enum Directions
     {
-        NORTH,
-        WEST,
-        SOUTH,
-        EAST
+        NORTH = 'N',
+        WEST = 'W',
+        SOUTH = 'S',
+        EAST = 'E'
     }
 
     class DirectionsUtil {
 
+        /*
+        public static string toString(Directions d) {
+            switch (d) {
+                case Directions.NORTH:
+                    return "N";
+                case Directions.SOUTH:
+                    return "S";
+                case Directions.EAST:
+                    return "E";
+                case Directions.WEST:
+                    return "W";
+                default:
+                    Console.WriteLine("Invalid Direction provided: {0}.", d);
+                    System.Environment.Exit(1);
+                    break;
+            }
+        }
+        */
+
         // handles turning rover left/right, returns new facing direction
-        public Directions turn(Directions d, char turnDirection) {
+        public static Directions turn(Directions d, char turnDirection) {
             Directions res = d;
             switch (turnDirection) {
 

@@ -12,11 +12,14 @@ using System.Collections.Generic;
 namespace Ryan.Burke {
     class Rover {
 
-        public int xPos, yPos;
-        public Directions direction;
+        public int id {get; set;}
+        public int xPos {get; set;}
+        public int yPos {get; set;}
+        public Directions direction {get; set;}
         public List<char> instructions;
 
-        public Rover(int xPos, int yPos, Directions direction, List<char> instructions) {
+        public Rover(int id, int xPos, int yPos, Directions direction, List<char> instructions) {
+            this.id = id;
             this.xPos = xPos;
             this.yPos = yPos;
             this.direction = direction;
@@ -27,8 +30,24 @@ namespace Ryan.Burke {
             return (instructions.Count == 0);
         }
 
-        public List<char> getInstructions() {
-            return this.instructions;
+        public void move() {
+            switch (this.direction) {
+                case Directions.NORTH:
+                    this.yPos += 1;
+                    break;
+                case Directions.SOUTH:
+                    this.yPos -= 1;
+                    break;
+                case Directions.EAST:
+                    this.xPos += 1;
+                    break;
+                case Directions.WEST:
+                    this.xPos -= 1;
+                    break;
+                default:
+                    Console.WriteLine("error in Rover.move()");
+                    break;
+            }
         }
     }
 }

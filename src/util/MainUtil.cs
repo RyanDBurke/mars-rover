@@ -15,14 +15,12 @@ namespace Lib {
         //// handles input arg for input-file
         public static bool handleInput(string[] args) {
             if (args.Length == 0) {
-                Console.WriteLine("Please include input in command-args.");
-                Console.WriteLine("EX: mono Main.exe input.txt");
-                Console.WriteLine("EX: mono Main.exe input.txt --verbose");
-                System.Environment.Exit(1);
+                argError("\nPlease include input in command-args.\n" +
+                    "EX: mono Main.exe input.txt\n" + 
+                    "EX: mono Main.exe input.txt --verbose\n");
             } else if (args.Length >= 1) {
                 if (!File.Exists(args[0])) {
-                    Console.WriteLine("File: {0} does NOT exist.", args[0]);
-                    System.Environment.Exit(1);
+                    argError(String.Format("\nFile: {0} does NOT exist.", args[0]));
                 } else {
                     return true;
                 }
@@ -34,6 +32,14 @@ namespace Lib {
         //// set verbose flag given command-line arg
         public static bool handleVerbose(string[] args) {
             return (args.Length >= 2) ? (args[1] == "--verbose") : false;
+        }
+
+        //// throws arg error and prints string
+        public static void argError(string msg) {
+            Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(msg);
+                Console.ForegroundColor = ConsoleColor.White;
+                throw new ArgumentException();
         }
     }
 }

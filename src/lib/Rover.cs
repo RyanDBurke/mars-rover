@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using static Lib.DirectionsUtil;
+using static Lib.MainUtil;
 
 namespace Lib {
     class Rover {
@@ -67,14 +68,13 @@ namespace Lib {
                                 this.xPos -= 1;
                                 break;
                             default:
-                                Console.WriteLine("error in Rover.move()");
+                                argError("error in Rover.move()");
                                 break;
                         }
                         break;
                     default:
-                        Console.WriteLine("Invalid instruction provided: {0}", instruction);
+                        argError(String.Format("Invalid instruction provided: {0}", instruction));
                         break;
-
                 }
             }
         }

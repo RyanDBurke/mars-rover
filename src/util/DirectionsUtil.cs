@@ -33,8 +33,7 @@ namespace Lib {
                             res = Directions.SOUTH;
                             break;
                         default:
-                            Console.WriteLine("Invalid Direction provided: {0}.", d);
-                            System.Environment.Exit(1);
+                            MainUtil.argError(String.Format("\nInvalid Direction provided: {0}.", d));
                             break;
                     }
 
@@ -56,15 +55,13 @@ namespace Lib {
                             res = Directions.NORTH;
                             break;
                         default:
-                            Console.WriteLine("Invalid Direction provided: {0}.", d);
-                            System.Environment.Exit(1);
+                            MainUtil.argError(String.Format("\nInvalid Direction provided: {0}.", d));
                             break;
                     }
 
                     break;
                 default:
-                    Console.WriteLine("Invalid turn direction: {0}.", turnDirection);
-                    System.Environment.Exit(1);
+                    MainUtil.argError(String.Format("\nInvalid turn direction: {0}.", turnDirection));
                     break;
             }
 

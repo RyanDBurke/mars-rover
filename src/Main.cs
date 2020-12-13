@@ -70,8 +70,11 @@ namespace Ryan.Burke {
                         direction = Directions.WEST;
                         break;
                     default:
-                        Console.WriteLine("Invalid Direction provided: {0}.", Int32.Parse(roverPosition[2]));
-                        System.Environment.Exit(1);
+                        MainUtil.argError(
+                            String.Format(
+                                "\nInvalid Direction provided: {0}.", Int32.Parse(roverPosition[2])
+                            )
+                        );
                         break;
                 }
 

@@ -1,10 +1,9 @@
-<div align="center">mars-rover</div>
 <div align="center">mars rover movement simulation for DealerOn</div>
 
 # Table of Contents
 
 * [Dependencies](#dependencies)
-* Execute
+* Execution
   * [Ubuntu/WSL](#linux)
   * [Visual Studio](#win)
 
@@ -18,8 +17,8 @@
   ###### "--verbose" executes program with more stdout detail
   
 ## Visual Studio <a name="win"></a>
-1. Download Project .zip [here](https://github.com/RyanDBurke/mars-rover/raw/main/zip/mars-rover.zip) <br>
-2. Unzip and open solution in Visual Studio <br>
+1. Download Project/Solution .zip [here](https://github.com/RyanDBurke/mars-rover/raw/main/zip/mars-rover.zip) <br>
+2. Unzip and open solution (mars-rover/mars-rover.sln) in Visual Studio <br>
 3. add command-line args ```input.txt``` or ```input.txt --verbose``` <br>
   ###### "--verbose" executes program with more stdout detail
   

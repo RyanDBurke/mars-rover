@@ -21,7 +21,7 @@
   
 ## Visual Studio <a name="win"></a>
 1. Download Project/Solution .zip [here](https://github.com/RyanDBurke/mars-rover/raw/main/zip/mars-rover.zip) <br>
-2. Unzip and open solution (mars-rover/mars-rover.sln) in Visual Studio <br>
+2. Unzip and open solution (./mars-rover/mars-rover.sln) in Visual Studio <br>
 3. add command-line args ```input.txt``` or ```input.txt --verbose``` <br>
 4. run <br>
   ###### "--verbose" executes program with more stdout detail. Example [here](#verbose)

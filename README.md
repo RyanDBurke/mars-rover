@@ -1,4 +1,4 @@
-# mars-rover
+<div align="center">mars-rover</div>
 mars rover movement simulation for DealerOn
 
 # Table of Contents

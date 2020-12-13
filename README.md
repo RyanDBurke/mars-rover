@@ -1,3 +1,4 @@
+<div align="center">🤖</div>
 <div align="center">Mars rover movement simulation</div>
 
 # Table of Contents

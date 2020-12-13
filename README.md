@@ -7,3 +7,5 @@ mars rover movement simulation for DealerOn
 * [How do I execute?](#execute)
 
 ## dependencies <a name="dependencies"></a>
+* Make
+* mcs

@@ -19,7 +19,7 @@ namespace Lib {
                 Console.WriteLine("EX: ./Main.exe input.txt");
                 Console.WriteLine("EX: ./Main.exe input.txt --verbose");
                 System.Environment.Exit(1);
-            } else if (args.Length >= 1 || args.Length == 2) {
+            } else if (args.Length >= 1) {
                 if (!File.Exists(args[0])) {
                     Console.WriteLine("File: {0} does NOT exist.", args[0]);
                     System.Environment.Exit(1);
@@ -33,7 +33,7 @@ namespace Lib {
 
         //// set verbose flag given command-line arg
         public static bool handleVerbose(string[] args) {
-            return (args[1] == "--verbose");
+            return (args.Length >= 2) ? (args[1] == "--verbose") : false;
         }
     }
 }

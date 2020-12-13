@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Ryan.Burke {
     class main {
-        static void Main(string[] args) {
+       static void Main(string[] args) {
 
             // holds input file as array of text-lines
             string[] input = new string[1];
@@ -28,7 +28,7 @@ namespace Ryan.Burke {
             Console.WriteLine("Parsing Input from {0}\n", args[0]);
 
             // initialize our grid
-            String[] gridSize = input[0].Split(' ');
+            string[] gridSize = input[0].Split(' ');
             Grid plateau = new Grid(Int32.Parse(gridSize[0]), Int32.Parse(gridSize[1]));
 
             // initalizing all rovers, adding them to grid

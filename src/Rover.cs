@@ -13,7 +13,7 @@ namespace Ryan.Burke {
     class Rover {
 
         public int xPos, yPos;
-        Directions direction;
+        public Directions direction;
         public List<char> instructions;
 
 

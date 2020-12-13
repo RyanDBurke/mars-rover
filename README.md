@@ -4,13 +4,13 @@
 # Table of Contents
 
 * Execution
-  * [Ubuntu/WSL](#linux)
+  * [Bash/WSL](#linux)
   * [Visual Studio](#win)
   * [.zip](https://github.com/RyanDBurke/mars-rover/raw/main/zip/mars-rover.zip)
 * [Dependencies](#dependencies)
 * [Verbose Example](#verbose)
 
-## Ubuntu/WSL <a name="linux"></a>
+## Bash/WSL <a name="linux"></a>
 1. ```git clone https://github.com/RyanDBurke/mars-rover.git``` <br>
 2. ```cd mars-rover/```<br>
 3. ```./install.sh```<br>

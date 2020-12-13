@@ -2,10 +2,11 @@
 
 # Table of Contents
 
-* [Dependencies](#dependencies)
 * Execution
   * [Ubuntu/WSL](#linux)
   * [Visual Studio](#win)
+  * [.zip](https://github.com/RyanDBurke/mars-rover/raw/main/zip/mars-rover.zip)
+* [Dependencies](#dependencies)
 * [Verbose Example](#verbose)
 
 ## Ubuntu/WSL <a name="linux"></a>

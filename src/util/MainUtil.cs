@@ -16,8 +16,8 @@ namespace Lib {
         public static bool handleInput(string[] args) {
             if (args.Length == 0) {
                 Console.WriteLine("Please include input in command-args.");
-                Console.WriteLine("EX: ./Main.exe input.txt");
-                Console.WriteLine("EX: ./Main.exe input.txt --verbose");
+                Console.WriteLine("EX: mono Main.exe input.txt");
+                Console.WriteLine("EX: mono Main.exe input.txt --verbose");
                 System.Environment.Exit(1);
             } else if (args.Length >= 1) {
                 if (!File.Exists(args[0])) {

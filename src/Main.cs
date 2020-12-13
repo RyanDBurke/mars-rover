@@ -47,7 +47,7 @@ namespace Ryan.Burke {
                 // parse lines
                 string[] roverPosition = input[line].Split(' ');
                 List<char> roverInstructions = new List<Char>();
-                roverInstructions.AddRange(input[line + 1]);
+                roverInstructions.AddRange(input[line + 1].ToUpper());
                 roverInstructions.Remove(' ');
 
                 // extract rover constructor params

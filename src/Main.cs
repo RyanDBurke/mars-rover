@@ -42,7 +42,7 @@ namespace Ryan.Burke {
                 List<char> roverInstructions = new List<Char>();
                 roverInstructions.AddRange(input[line + 1]);
 
-                // extarct rover constructor params
+                // extract rover constructor params
                 int xPos = Int32.Parse(roverPosition[0]);
                 int yPos = Int32.Parse(roverPosition[1]);
                 
@@ -75,7 +75,7 @@ namespace Ryan.Burke {
 
                 // execute each of the current rover's instructions
                 while (!rover.completed()) {
-                    char instruction = rover.instructions[0];
+                    char instruction = (rover.instructions)[0];
                     rover.instructions.RemoveAt(0);
 
                     // execute move on grid and rover
@@ -87,7 +87,7 @@ namespace Ryan.Burke {
                         case 'M':
                             break;
                         default:
-                            Console.WriteLine("Invalid instruction provided: {0}.", instruction);
+                            Console.WriteLine("Invalid instruction provided: {0}", instruction);
                             break;
 
                     }

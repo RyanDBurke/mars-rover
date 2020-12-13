@@ -16,7 +16,6 @@ namespace Ryan.Burke {
         public Directions direction;
         public List<char> instructions;
 
-
         public Rover(int xPos, int yPos, Directions direction, List<char> instructions) {
             this.xPos = xPos;
             this.yPos = yPos;
@@ -26,6 +25,10 @@ namespace Ryan.Burke {
 
         public bool completed() {
             return (instructions.Count == 0);
+        }
+
+        public List<char> getInstructions() {
+            return this.instructions;
         }
     }
 }

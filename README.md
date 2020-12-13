@@ -4,9 +4,21 @@
 # Table of Contents
 
 * [Dependencies](#dependencies)
-* [How do I execute?](#execute)
+* Execute
+  * [Ubuntu/WSL](#linux)
+  * [Windows PowerShell](#win)
 
-## How do I execute? <a name="dependencies"></a>
+## Ubuntu/WSL <a name="linux"></a>
+1. ```git clone https://github.com/RyanDBurke/mars-rover.git``` <br>
+2. ```cd mars-rover/```<br>
+3. ```./install.sh```<br>
+4. ```cd src/```<br>
+5. ```make```<br>
+6. ```mono Main.exe input.txt``` or ```mono Main.exe input.txt --verbose```<br>
+  ###### "--verbose" executes program with more stdout detail
+  
+## Windows Powershell <a name="win"></a>
+1. Install [Mono](https://www.mono-project.com/docs/getting-started/install/windows/) and [Make For Windows](https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=netactuate&download=)
 1. ```git clone https://github.com/RyanDBurke/mars-rover.git``` <br>
 2. ```cd mars-rover/```<br>
 3. ```./install.sh```<br>
